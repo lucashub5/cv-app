@@ -1,0 +1,188 @@
+#root {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+  width: 794px;
+  height: 1123px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sheet {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  font-size: 10px;
+  top: 0px;
+  left: 0px;
+}
+
+h1 {
+  margin: 5px;
+  background: linear-gradient(to right, #673F69, #D74B76);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+footer h2 {
+  position: fixed;
+  font-size: 10px;
+  bottom: 0px;
+  left: 0px;
+  letter-spacing: -1px;
+  margin: 5px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+section {
+  display: flex;
+}
+
+.basic-info {
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 15px;
+}
+
+.p-basic-info {
+  letter-spacing: 0.5px;
+}
+
+textarea.p-basic-info:focus {
+  height: 100%;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  background: grey;
+  box-sizing: border-box;
+}
+
+.h2-basic-info, .h3-basic-info, .p-basic-info {
+  margin: 0px;
+}
+
+.contact-info ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  gap: 20px;
+  padding: 0px;
+  margin-top: 20px;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 20px;
+}
+
+.contact-info li img {
+  width: auto;
+  height: 20px;
+}
+
+.entity, .skills-info {
+  flex-direction: column;
+}
+
+.entity ul {
+  width: auto;
+  padding: 0px;
+  list-style: none;
+}
+
+h3, input.h3-basic-info:focus {
+  height: 30px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+
+h4 {
+  margin: 0px;
+}
+
+.entity-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.entity ul {
+  padding: 10px;
+}
+
+.entity-desc {
+  margin: 10px;
+}
+
+.entity-desc li {
+  margin-bottom: 5px;
+}
+
+.skills-info ul {
+  padding-left: 20px;
+}
+
+.skills-info ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.btn {
+  display: none;
+  height: 20px;
+  margin: 5px;
+  background: white;
+}
+
+.delete {
+  position: relative;
+  top: -20px;
+}
+
+.sheet:hover .btn {
+  display: block;
+}
+
+.sheet:hover li {
+  border: 1px dotted black;
+}
+
+.entity-desc li {
+  display: flex;
+}
+
+.entity-header {
+  display: flex;
+}
+
+.contact-info li {
+  border: none !important;
+}
+
+.skills-info li {
+  display: flex;
+  align-items: center;
+}
