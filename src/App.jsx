@@ -2,6 +2,10 @@ import './App.css';
 import EditText from './EditElement';
 import AddSection from './EntityInfo';
 import EntitySkills from './EntitySkills';
+import gmailIcon from './assets/gmail-icon.svg';
+import wspIcon from './assets/wsp-icon.svg';
+import mapsIcon from './assets/maps-icon.svg';
+import linkedinIcon from './assets/linkedin-icon.svg';
 
 function App() {
 
@@ -21,19 +25,19 @@ function App() {
           <section className='contact-info'>
             <ul>
               <li>
-                <img src='./src/assets/gmail-icon.svg' alt='GMAIL' />
+                <img src={gmailIcon} alt='GMAIL' />
                 <EditText typeElement="p" classElement="none" textElement="jhondeep@gmail.com" />
               </li>
               <li>
-                <img src='./src/assets/wsp-icon.svg' alt='WSP' />
+                <img src={wspIcon} alt='WSP' />
                 <EditText typeElement="p" classElement="none" textElement="+011 1 11 2222-3333" />
               </li>
               <li>
-                <img src='./src/assets/maps-icon.svg' alt='MAPS' />
+                <img src={mapsIcon} alt='MAPS' />
                 <EditText typeElement="p" classElement="none" textElement="Miami, Florida. EEUU" />
               </li>
               <li>
-                <img src='./src/assets/linkedin-icon.svg' alt='LINKEDIN' />
+                <img src={linkedinIcon} alt='LINKEDIN' />
                 <EditText typeElement="p" classElement="none" textElement="linkedin.com/in/jhondeep" />
               </li>
             </ul>
